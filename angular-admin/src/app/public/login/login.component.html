@@ -1,0 +1,31 @@
+<main class="form-signin text-center">
+  <form [formGroup]="form" (submit)="submit()">
+    <h1 class="h3 mb-3 fw-normal">Please login</h1>
+
+    <div class="form-floating">
+      <input
+        formControlName="email"
+        name="email"
+        type="email"
+        class="form-control"
+        id="floatingInput"
+      />
+      <label for="floatingInput">Email address</label>
+    </div>
+
+    <div class="form-floating">
+      <input
+        formControlName="password"
+        name="password"
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
+      />
+      <label for="floatingPassword">Password</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Log in</button>
+    <p class="mt-5 mb-3 text-muted">&#9786; 2021</p>
+  </form>
+</main>
