@@ -8,7 +8,10 @@
         href="#"
         >{{ user?.first_name }} {{ user?.last_name }}</a
       >
-      <a routerLink="/login" class="nav-link px-3 text-decoration-none" href="#"
+      <a
+        routerLink="/login"
+        class="nav-link px-3 text-decoration-none"
+        (click)="logout()"
         >Sign out</a
       >
     </div>
