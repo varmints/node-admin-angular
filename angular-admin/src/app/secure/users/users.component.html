@@ -15,7 +15,15 @@
         <td>{{ user.first_name }} {{ user.last_name }}</td>
         <td>{{ user.email }}</td>
         <td>{{ user.role.name }}</td>
-        <td></td>
+        <td>
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            (click)="delete(user.id)"
+          >
+            Delete
+          </button>
+        </td>
       </tr>
     </tbody>
   </table>
