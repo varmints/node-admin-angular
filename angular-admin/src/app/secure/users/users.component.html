@@ -20,13 +20,20 @@
         <td>{{ user.email }}</td>
         <td>{{ user.role.name }}</td>
         <td>
-          <button
-            type="button"
-            class="btn btn-outline-danger"
-            (click)="delete(user.id)"
-          >
-            Delete
-          </button>
+          <div class="btn-group mr-2">
+            <a
+              [routerLink]="['/users', user.id, 'edit']"
+              class="btn btn-outline-secondary"
+              >Edit</a
+            >
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              (click)="delete(user.id)"
+            >
+              Delete
+            </button>
+          </div>
         </td>
       </tr>
     </tbody>
