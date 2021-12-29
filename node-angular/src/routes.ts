@@ -73,7 +73,7 @@ export const routes = (router: Router) => {
     DeleteUser
   );
 
-  router.get("/api/permisions", AuthMiddleware, Permissions);
+  router.get("/api/permissions", AuthMiddleware, Permissions);
 
   router.get(
     "/api/roles",
