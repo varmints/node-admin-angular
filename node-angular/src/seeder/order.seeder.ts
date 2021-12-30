@@ -18,6 +18,7 @@ createConnection().then(async (connection) => {
 
     for (let j = 0; j < randomInt(1, 5); j++) {
       await orderItemRepsitory.save({
+        order,
         product_title: faker.lorem.words(2),
         price: randomInt(10, 100),
         quantity: randomInt(1, 5),
