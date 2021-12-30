@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
 import { MenuComponent } from './menu/menu.component';
 import { SecureComponent } from './secure.component';
@@ -40,6 +41,12 @@ import { OrdersComponent } from './orders/orders.component';
     ProductEditComponent,
     OrdersComponent,
   ],
-  imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+  ],
 })
 export class SecureModule {}
