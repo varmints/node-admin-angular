@@ -15,6 +15,7 @@ import { RoleCreateComponent } from './roles/role-create/role-create.component';
 import { RoleEditComponent } from './roles/role-edit/role-edit.component';
 import { ProductsComponent } from './products/products.component';
 import { PaginatorComponent } from './components/paginator/paginator.component';
+import { ProductCreateComponent } from './products/product-create/product-create.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PaginatorComponent } from './components/paginator/paginator.component';
     RoleEditComponent,
     ProductsComponent,
     PaginatorComponent,
+    ProductCreateComponent,
   ],
   imports: [CommonModule, RouterModule, FormsModule, ReactiveFormsModule],
 })
